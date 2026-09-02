@@ -15,10 +15,6 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       margin: 0;
       background: #ffffff;
@@ -61,13 +57,21 @@
     .nav-name {
       font-size: 19px;
       font-weight: 600;
+    }
+
+    .nav-name a {
       color: #222;
+      text-decoration: none;
     }
 
     .nav-links a {
       margin-left: 28px;
       color: #444;
       font-size: 15px;
+    }
+
+    .nav-links a:hover {
+      color: #000;
     }
 
 
@@ -127,7 +131,7 @@
     }
 
 
-    /* ---------- SECTIONS ---------- */
+    /* ---------- ABOUT ---------- */
 
     section {
       padding: 42px 0;
@@ -145,51 +149,6 @@
     p {
       margin-top: 0;
       margin-bottom: 18px;
-    }
-
-
-    /* ---------- RESEARCH ---------- */
-
-    .paper {
-      margin-bottom: 38px;
-    }
-
-    .paper-title {
-      font-size: 19px;
-      font-weight: bold;
-      margin-bottom: 4px;
-    }
-
-    .paper-status {
-      font-style: italic;
-      color: #666;
-      margin-bottom: 7px;
-    }
-
-    .paper-links {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-
-    .paper-links a {
-      margin-right: 15px;
-    }
-
-
-    /* ---------- TEACHING ---------- */
-
-    .teaching-item {
-      margin-bottom: 22px;
-    }
-
-    .course {
-      font-weight: bold;
-    }
-
-    .course-details {
-      color: #666;
-      font-size: 16px;
     }
 
 
@@ -241,6 +200,7 @@
         margin-left: 0;
         margin-right: 18px;
       }
+
     }
 
   </style>
@@ -254,20 +214,35 @@
 <!-- NAVIGATION -->
 
 <nav>
+
   <div class="container nav-inner">
 
     <div class="nav-name">
-      Ira Abraham
+      <a href="index.html">Ira Abraham</a>
     </div>
 
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="assets/Ira_Abraham_CV.pdf" target="_blank">CV</a>
-  </div>
+    <div class="nav-links">
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="research.html">
+        Research
+      </a>
+
+      <a href="teaching.html">
+        Teaching
+      </a>
+
+      <a href="assets/Ira_Abraham_CV.pdf" target="_blank">
+        CV
+      </a>
+
+    </div>
 
   </div>
+
 </nav>
 
 
@@ -296,6 +271,7 @@
       Health Economics · Industrial Organization · Healthcare Finance
     </div>
 
+
     <div class="quick-links">
 
       <a href="mailto:YOUR_EMAIL_HERE">
@@ -321,7 +297,6 @@
 
   <div class="intro-photo">
 
-    <!-- Automatically uses your GitHub profile picture -->
     <img
       class="profile-photo"
       src="https://github.com/iraabraham.png"
@@ -335,7 +310,7 @@
 
 <!-- ABOUT -->
 
-<section id="about">
+<section>
 
   <h2>About</h2>
 
@@ -359,136 +334,6 @@
 </section>
 
 
-
-<!-- RESEARCH -->
-
-<section id="research">
-
-  <h2>Research</h2>
-
-
-  <div class="paper">
-
-    <div class="paper-title">
-      Selection-Corrected Benchmark in the Medicare Advantage Market
-    </div>
-
-    <div class="paper-status">
-      Job Market Paper
-    </div>
-
-    <div class="paper-links">
-
-      <a href="#" target="_blank">
-        Paper
-      </a>
-
-      <a href="#" target="_blank">
-        Slides
-      </a>
-
-    </div>
-
-    <p>
-      Add a short two- or three-sentence description of the paper here.
-      You can also include the full abstract later if you prefer.
-    </p>
-
-  </div>
-
-
-  <!--
-  COPY THIS BLOCK WHEN YOU WANT TO ADD ANOTHER PAPER
-
-  <div class="paper">
-
-    <div class="paper-title">
-      Title of Paper
-    </div>
-
-    <div class="paper-status">
-      Working Paper
-    </div>
-
-    <div class="paper-links">
-      <a href="#" target="_blank">Paper</a>
-    </div>
-
-    <p>
-      Short description of the paper.
-    </p>
-
-  </div>
-
-  -->
-
-
-</section>
-
-
-
-<!-- TEACHING -->
-
-<section id="teaching">
-
-  <h2>Teaching</h2>
-
-
-  <div class="teaching-item">
-
-    <div class="course">
-      Life and Health Insurance
-    </div>
-
-    <div class="course-details">
-      Instructor · University of Iowa · Fall 2026
-    </div>
-
-  </div>
-
-
-  <div class="teaching-item">
-
-    <div class="course">
-      Microeconomic Theory
-    </div>
-
-    <div class="course-details">
-      Instructor · Boston College
-    </div>
-
-  </div>
-
-
-  <div class="teaching-item">
-
-    <div class="course">
-      Health Economics
-    </div>
-
-    <div class="course-details">
-      Instructor · Boston College
-    </div>
-
-  </div>
-
-
-  <div class="teaching-item">
-
-    <div class="course">
-      Game Theory
-    </div>
-
-    <div class="course-details">
-      Instructor · Boston College
-    </div>
-
-  </div>
-
-</section>
-
-
-
 </main>
 
 
@@ -507,4 +352,5 @@
 
 
 </body>
+
 </html>
