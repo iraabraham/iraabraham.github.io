@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ira Abraham</title>
+
+  <style>
+
+    /* ---------- GENERAL ---------- */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: #222;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #2d5873;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+
+
+    /* ---------- NAVIGATION ---------- */
+
+    nav {
+      border-bottom: 1px solid #e5e5e5;
+      padding: 20px 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-name {
+      font-size: 19px;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .nav-links a {
+      margin-left: 28px;
+      color: #444;
+      font-size: 15px;
+    }
+
+
+    /* ---------- INTRO ---------- */
+
+    .intro {
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 60px;
+      align-items: center;
+      padding: 75px 0 55px;
+    }
+
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 42px;
+      margin: 0 0 6px;
+      font-weight: 600;
+      letter-spacing: -1px;
+    }
+
+    .position {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 3px;
+    }
+
+    .institution {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 23px;
+    }
+
+    .fields {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .profile-photo {
+      width: 210px;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .quick-links {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      margin-top: 18px;
+    }
+
+    .quick-links a {
+      margin-right: 18px;
+    }
+
+
+    /* ---------- SECTIONS ---------- */
+
+    section {
+      padding: 42px 0;
+      border-top: 1px solid #ececec;
+    }
+
+    h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 25px;
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 18px;
+    }
+
+
+    /* ---------- RESEARCH ---------- */
+
+    .paper {
+      margin-bottom: 38px;
+    }
+
+    .paper-title {
+      font-size: 19px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .paper-status {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 7px;
+    }
+
+    .paper-links {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .paper-links a {
+      margin-right: 15px;
+    }
+
+
+    /* ---------- TEACHING ---------- */
+
+    .teaching-item {
+      margin-bottom: 22px;
+    }
+
+    .course {
+      font-weight: bold;
+    }
+
+    .course-details {
+      color: #666;
+      font-size: 16px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+      margin-top: 30px;
+      border-top: 1px solid #e5e5e5;
+      padding: 30px 0 45px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      color: #888;
+    }
+
+
+    /* ---------- MOBILE ---------- */
+
+    @media (max-width: 700px) {
+
+      .intro {
+        grid-template-columns: 1fr;
+        padding-top: 45px;
+        gap: 30px;
+      }
+
+      .profile-photo {
+        width: 180px;
+        height: 180px;
+      }
+
+      .intro-photo {
+        order: -1;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        margin-top: 12px;
+      }
+
+      .nav-links a {
+        margin-left: 0;
+        margin-right: 18px;
+      }
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+  <div class="container nav-inner">
+
+    <div class="nav-name">
+      Ira Abraham
+    </div>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
+      <a href="assets/Ira_Abraham_CV.pdf" target="_blank">CV</a>
+    </div>
+
+  </div>
+</nav>
+
+
+
+<main class="container">
+
+
+<!-- INTRO -->
+
+<div class="intro">
+
+  <div>
+
+    <h1>Ira Abraham</h1>
+
+    <div class="position">
+      Postdoctoral Researcher
+    </div>
+
+    <div class="institution">
+      Finance Department, Tippie College of Business<br>
+      University of Iowa
+    </div>
+
+    <div class="fields">
+      Health Economics · Industrial Organization · Healthcare Finance
+    </div>
+
+    <div class="quick-links">
+
+      <a href="mailto:YOUR_EMAIL_HERE">
+        Email
+      </a>
+
+      <a href="assets/Ira_Abraham_CV.pdf" target="_blank">
+        CV
+      </a>
+
+      <a href="YOUR_GOOGLE_SCHOLAR_LINK" target="_blank">
+        Google Scholar
+      </a>
+
+      <a href="YOUR_LINKEDIN_LINK" target="_blank">
+        LinkedIn
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="intro-photo">
+
+    <!-- Automatically uses your GitHub profile picture -->
+    <img
+      class="profile-photo"
+      src="https://github.com/iraabraham.png"
+      alt="Ira Abraham">
+
+  </div>
+
+</div>
+
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+  <h2>About</h2>
+
+  <p>
+    I am a Postdoctoral Researcher in the Finance Department at the
+    Tippie College of Business, University of Iowa.
+    I received my Ph.D. in Economics from Boston College in 2026.
+  </p>
+
+  <p>
+    My research lies at the intersection of health economics and
+    industrial organization. I study health insurance markets,
+    healthcare providers, and the design of public health insurance
+    programs, with a particular focus on Medicare Advantage.
+  </p>
+
+  <p>
+    I am on the 2026–2027 job market.
+  </p>
+
+</section>
+
+
+
+<!-- RESEARCH -->
+
+<section id="research">
+
+  <h2>Research</h2>
+
+
+  <div class="paper">
+
+    <div class="paper-title">
+      Selection-Corrected Benchmark in the Medicare Advantage Market
+    </div>
+
+    <div class="paper-status">
+      Job Market Paper
+    </div>
+
+    <div class="paper-links">
+
+      <a href="#" target="_blank">
+        Paper
+      </a>
+
+      <a href="#" target="_blank">
+        Slides
+      </a>
+
+    </div>
+
+    <p>
+      Add a short two- or three-sentence description of the paper here.
+      You can also include the full abstract later if you prefer.
+    </p>
+
+  </div>
+
+
+  <!--
+  COPY THIS BLOCK WHEN YOU WANT TO ADD ANOTHER PAPER
+
+  <div class="paper">
+
+    <div class="paper-title">
+      Title of Paper
+    </div>
+
+    <div class="paper-status">
+      Working Paper
+    </div>
+
+    <div class="paper-links">
+      <a href="#" target="_blank">Paper</a>
+    </div>
+
+    <p>
+      Short description of the paper.
+    </p>
+
+  </div>
+
+  -->
+
+
+</section>
+
+
+
+<!-- TEACHING -->
+
+<section id="teaching">
+
+  <h2>Teaching</h2>
+
+
+  <div class="teaching-item">
+
+    <div class="course">
+      Life and Health Insurance
+    </div>
+
+    <div class="course-details">
+      Instructor · University of Iowa · Fall 2026
+    </div>
+
+  </div>
+
+
+  <div class="teaching-item">
+
+    <div class="course">
+      Microeconomic Theory
+    </div>
+
+    <div class="course-details">
+      Instructor · Boston College
+    </div>
+
+  </div>
+
+
+  <div class="teaching-item">
+
+    <div class="course">
+      Health Economics
+    </div>
+
+    <div class="course-details">
+      Instructor · Boston College
+    </div>
+
+  </div>
+
+
+  <div class="teaching-item">
+
+    <div class="course">
+      Game Theory
+    </div>
+
+    <div class="course-details">
+      Instructor · Boston College
+    </div>
+
+  </div>
+
+</section>
+
+
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    © 2026 Ira Abraham
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
