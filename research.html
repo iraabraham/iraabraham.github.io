@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Research | Ira Abraham</title>
+
+  <style>
+
+    /* ---------- GENERAL ---------- */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: #222;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #2d5873;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+
+
+    /* ---------- NAVIGATION ---------- */
+
+    nav {
+      border-bottom: 1px solid #e5e5e5;
+      padding: 20px 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-name {
+      font-size: 19px;
+      font-weight: 600;
+    }
+
+    .nav-name a {
+      color: #222;
+      text-decoration: none;
+    }
+
+    .nav-links a {
+      margin-left: 28px;
+      color: #444;
+      font-size: 15px;
+    }
+
+    .nav-links a:hover {
+      color: #000;
+    }
+
+
+    /* ---------- PAGE HEADER ---------- */
+
+    .page-header {
+      padding: 65px 0 35px;
+    }
+
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 36px;
+      font-weight: 500;
+      margin: 0;
+      letter-spacing: -0.5px;
+    }
+
+
+    /* ---------- SECTIONS ---------- */
+
+    section {
+      padding: 35px 0 20px;
+      border-top: 1px solid #ececec;
+    }
+
+    h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 23px;
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 35px;
+    }
+
+
+    /* ---------- PAPERS ---------- */
+
+    .paper {
+      margin-bottom: 55px;
+    }
+
+    .paper-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .paper-status {
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #777;
+      margin-bottom: 7px;
+    }
+
+    .coauthors {
+      font-size: 16px;
+      margin-bottom: 9px;
+      color: #555;
+    }
+
+    .paper-links {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .paper-links a {
+      margin-right: 16px;
+    }
+
+    .abstract-label {
+      font-weight: bold;
+    }
+
+    .abstract {
+      max-width: 850px;
+    }
+
+    .abstract p {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+      margin-top: 35px;
+      border-top: 1px solid #e5e5e5;
+      padding: 30px 0 45px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      color: #888;
+    }
+
+
+    /* ---------- MOBILE ---------- */
+
+    @media (max-width: 700px) {
+
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        margin-top: 12px;
+      }
+
+      .nav-links a {
+        margin-left: 0;
+        margin-right: 18px;
+      }
+
+      .page-header {
+        padding-top: 45px;
+      }
+
+      h1 {
+        font-size: 31px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+  <div class="container nav-inner">
+
+    <div class="nav-name">
+      <a href="index.html">Ira Abraham</a>
+    </div>
+
+    <div class="nav-links">
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="research.html">
+        Research
+      </a>
+
+      <a href="teaching.html">
+        Teaching
+      </a>
+
+      <a href="assets/Ira_Abraham_CV.pdf" target="_blank">
+        CV
+      </a>
+
+    </div>
+
+  </div>
+
+</nav>
+
+
+
+<main class="container">
+
+
+<!-- PAGE TITLE -->
+
+<div class="page-header">
+
+  <h1>Research</h1>
+
+</div>
+
+
+
+<!-- JOB MARKET PAPER -->
+
+<section>
+
+  <h2>Job Market Paper</h2>
+
+
+  <div class="paper">
+
+    <div class="paper-title">
+      Reducing Medicare Costs by Accounting for Selection
+    </div>
+
+    <div class="paper-status">
+      Job Market Paper
+    </div>
+
+    <div class="paper-links">
+
+      <a
+        href="https://drive.google.com/file/d/1SK9BV0TaADtSHCfUh690MsTTkUqswuIr/view?usp=share_link"
+        target="_blank">
+        Paper
+      </a>
+
+    </div>
+
+
+    <div class="abstract">
+
+      <p>
+        <span class="abstract-label">Abstract.</span>
+        Medicare Advantage was designed to use competition among private
+        insurers and managed care to reduce Medicare spending while improving
+        care. However, imperfect risk adjustment does not fully account for
+        healthier beneficiaries selecting into Medicare Advantage, creating a
+        trade-off between selection-driven costs and managed-care efficiencies.
+      </p>
+
+      <p>
+        Using administrative claims data together with survey-based measures
+        of health, I develop a structural model of beneficiary plan choice and
+        insurers' equilibrium pricing. Counterfactual simulations show that
+        eliminating Medicare Advantage would reduce annual government spending
+        by $20.8 billion.
+      </p>
+
+      <p>
+        Incorporating selection beyond current risk adjustment into subsidy
+        design reduces CMS expenditure by $7.56 billion, while the combined
+        reduction in consumer surplus and producer profits is approximately
+        $0.585 billion.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- WORK IN PROGRESS -->
+
+<section>
+
+  <h2>Work in Progress</h2>
+
+
+  <!-- PAPER 2 -->
+
+  <div class="paper">
+
+    <div class="paper-title">
+      The Impact of Hospital-Sponsored Health Plans on Readmission Rates
+    </div>
+
+    <div class="coauthors">
+      with
+      <a href="https://albertoc94.github.io/albertocappello/"
+         target="_blank">
+         Alberto Cappello
+      </a>
+    </div>
+
+    <div class="paper-links">
+
+      <a
+        href="https://albertoc94.github.io/albertocappello/publications/VI_healthplans_draft.pdf"
+        target="_blank">
+        Paper
+      </a>
+
+    </div>
+
+
+    <div class="abstract">
+
+      <p>
+        <span class="abstract-label">Abstract.</span>
+        Hospital systems increasingly integrate healthcare delivery and
+        financing by sponsoring their own health plans. We study whether
+        patients admitted to vertically integrated hospitals experience
+        different 30-day unplanned readmission rates than patients admitted
+        to non-integrated hospitals.
+      </p>
+
+      <p>
+        To address patient selection, we use an instrumental-variables strategy
+        that exploits variation in hospital assignment from ambulance
+        transportation in emergency episodes and patients' relative distance
+        to integrated versus non-integrated hospitals. Hospital and year fixed
+        effects account for persistent differences in hospital quality.
+      </p>
+
+      <p>
+        We find that in less concentrated hospital markets, admission to a
+        vertically integrated hospital is associated with a substantially lower
+        probability of readmission, while the estimated effect is smaller in
+        more concentrated hospital markets.
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- PAPER 3 -->
+
+  <div class="paper">
+
+    <div class="paper-title">
+      Spillover Effects between Medicare Programs
+    </div>
+
+    <div class="coauthors">
+      with
+      <a href="https://albertoc94.github.io/albertocappello/"
+         target="_blank">
+         Alberto Cappello
+      </a>
+      and
+      <a href="https://www.yunussemihcoskun.com/"
+         target="_blank">
+         Yunus Coskun
+      </a>
+    </div>
+
+    <div class="paper-links">
+
+      <a
+        href="https://drive.google.com/file/d/1vOo7wZHVFwT09UqHGLMiiGMKIwStg-rp/view?usp=sharing"
+        target="_blank">
+        Paper
+      </a>
+
+    </div>
+
+
+    <div class="abstract">
+
+      <p>
+        <span class="abstract-label">Abstract.</span>
+        Medicare's major programs share healthcare providers, creating the
+        possibility that incentives in one part of Medicare affect outcomes
+        in another. We study whether incentives created by the Medicare Shared
+        Savings Program (MSSP) spill over from Traditional Medicare to
+        Medicare Advantage.
+      </p>
+
+      <p>
+        We exploit variation generated by the 2019 Pathways to Success reform
+        and construct a Bartik-style instrument for Medicare Advantage plans'
+        exposure to MSSP activity.
+      </p>
+
+      <p>
+        Greater MSSP exposure reduces Medicare Advantage plans' expected cost
+        of coverage and increases plan generosity. A 1% increase in exposure
+        reduces expected cost per beneficiary by 0.17%, increases rebates by
+        2.1%, lowers out-of-pocket maxima by 0.37%, and raises the probability
+        of offering a zero-premium plan by 0.57 percentage points.
+      </p>
+
+    </div>
+
+  </div>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+    © 2026 Ira Abraham
+  </div>
+
+</footer>
+
+
+</body>
+
+</html>
