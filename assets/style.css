@@ -1,0 +1,502 @@
+/* ---------- GENERAL ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #222;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+a {
+  color: #2d5873;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+nav {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.nav-name a {
+  color: #222;
+}
+
+.nav-links a {
+  margin-left: 28px;
+  color: #444;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+
+/* ---------- INTRO ---------- */
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 60px;
+  align-items: center;
+  padding: 75px 0 55px;
+}
+
+.home h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  margin: 0 0 6px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.position {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 3px;
+}
+
+.institution {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 23px;
+}
+
+.fields {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.profile-photo {
+  width: 210px;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.quick-links {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: 18px;
+}
+
+.quick-links a {
+  margin-right: 18px;
+}
+
+
+/* ---------- PAGE HEADER ---------- */
+
+.page-header {
+  padding: 65px 0 35px;
+}
+
+.page h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+
+/* ---------- SECTIONS ---------- */
+
+.home section {
+  padding: 42px 0;
+  border-top: 1px solid #ececec;
+}
+
+.page section {
+  padding: 35px 0 20px;
+  border-top: 1px solid #ececec;
+}
+
+.home h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.research-page h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.research-page .page-header,
+.teaching-page .page-header {
+  padding: 42px 0 12px;
+}
+
+.research-page h1,
+.teaching-page h1 {
+  color: #777;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.research-page section,
+.teaching-page section {
+  padding: 24px 0 10px;
+}
+
+.teaching-page h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+
+/* ---------- PAPERS ---------- */
+
+.paper {
+  margin-bottom: 55px;
+}
+
+.research-page .paper {
+  margin-bottom: 0;
+  padding: 18px 0 22px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.research-page h2 + .paper {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.research-page section:first-of-type .paper:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.paper-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.research-page .paper-title {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.35;
+  margin-bottom: 5px;
+}
+
+.paper-status {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #777;
+  margin-bottom: 7px;
+}
+
+.research-page .paper-status {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.coauthors {
+  font-size: 16px;
+  margin-bottom: 9px;
+  color: #555;
+}
+
+.research-page .coauthors {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.paper-links {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.research-page .paper-links {
+  margin-bottom: 8px;
+}
+
+.paper-links a {
+  margin-right: 16px;
+}
+
+.abstract-label {
+  font-weight: bold;
+}
+
+.abstract {
+  max-width: 850px;
+}
+
+.abstract p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.research-page .abstract {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.65;
+  max-width: 850px;
+}
+
+.research-page .abstract summary {
+  color: #777;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.research-page .abstract summary:hover {
+  color: #555;
+  text-decoration: underline;
+}
+
+.research-page .abstract[open] summary {
+  margin-bottom: 8px;
+}
+
+.research-page .abstract p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.research-page .abstract-label {
+  display: none;
+}
+
+
+/* ---------- COURSES ---------- */
+
+.department {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #777;
+  margin-top: -25px;
+  margin-bottom: 35px;
+}
+
+.teaching-page .department {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.course {
+  margin-bottom: 38px;
+}
+
+.teaching-page .course {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 24px;
+  row-gap: 2px;
+  align-items: baseline;
+  margin-left: 24px;
+  margin-bottom: 0;
+  padding: 12px 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.teaching-page .department + .course {
+  border-top: 0;
+}
+
+.course-title {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.teaching-page .course-title {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.course-semester {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.teaching-page .course-semester {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.course-role {
+  font-style: italic;
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.teaching-page .course-role {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.course-links {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.teaching-page .course-links {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  white-space: nowrap;
+}
+
+.course-links a {
+  margin-right: 16px;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 30px 0 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #888;
+}
+
+.home footer {
+  margin-top: 30px;
+}
+
+.page footer {
+  margin-top: 35px;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+  .nav-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 12px;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    margin-right: 18px;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    padding-top: 45px;
+    gap: 30px;
+  }
+
+  .profile-photo {
+    width: 180px;
+  }
+
+  .intro-photo {
+    order: -1;
+  }
+
+  .home h1 {
+    font-size: 34px;
+  }
+
+  .page-header {
+    padding-top: 45px;
+  }
+
+  .page h1 {
+    font-size: 31px;
+  }
+
+  .teaching-page .page-header {
+    padding-top: 34px;
+  }
+
+  .research-page h1,
+  .teaching-page h1 {
+    font-size: 13px;
+  }
+
+  .teaching-page .course {
+    grid-template-columns: 1fr;
+    margin-left: 16px;
+    row-gap: 3px;
+  }
+
+  .teaching-page .course-links {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 2px;
+  }
+
+}

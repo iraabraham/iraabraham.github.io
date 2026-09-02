@@ -7,203 +7,12 @@
 
   <title>Research | Ira Abraham</title>
 
-  <style>
-
-    /* ---------- GENERAL ---------- */
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: #ffffff;
-      color: #222;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 17px;
-      line-height: 1.7;
-    }
-
-    a {
-      color: #2d5873;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 0 30px;
-    }
-
-
-    /* ---------- NAVIGATION ---------- */
-
-    nav {
-      border-bottom: 1px solid #e5e5e5;
-      padding: 20px 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .nav-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .nav-name {
-      font-size: 19px;
-      font-weight: 600;
-    }
-
-    .nav-name a {
-      color: #222;
-      text-decoration: none;
-    }
-
-    .nav-links a {
-      margin-left: 28px;
-      color: #444;
-      font-size: 15px;
-    }
-
-    .nav-links a:hover {
-      color: #000;
-    }
-
-
-    /* ---------- PAGE HEADER ---------- */
-
-    .page-header {
-      padding: 65px 0 35px;
-    }
-
-    h1 {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 36px;
-      font-weight: 500;
-      margin: 0;
-      letter-spacing: -0.5px;
-    }
-
-
-    /* ---------- SECTIONS ---------- */
-
-    section {
-      padding: 35px 0 20px;
-      border-top: 1px solid #ececec;
-    }
-
-    h2 {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 23px;
-      font-weight: 500;
-      margin-top: 0;
-      margin-bottom: 35px;
-    }
-
-
-    /* ---------- PAPERS ---------- */
-
-    .paper {
-      margin-bottom: 55px;
-    }
-
-    .paper-title {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 4px;
-    }
-
-    .paper-status {
-      font-family: Arial, Helvetica, sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      font-size: 12px;
-      font-weight: 600;
-      color: #777;
-      margin-bottom: 7px;
-    }
-
-    .coauthors {
-      font-size: 16px;
-      margin-bottom: 9px;
-      color: #555;
-    }
-
-    .paper-links {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      margin-bottom: 16px;
-    }
-
-    .paper-links a {
-      margin-right: 16px;
-    }
-
-    .abstract-label {
-      font-weight: bold;
-    }
-
-    .abstract {
-      max-width: 850px;
-    }
-
-    .abstract p {
-      margin-top: 0;
-      margin-bottom: 15px;
-    }
-
-
-    /* ---------- FOOTER ---------- */
-
-    footer {
-      margin-top: 35px;
-      border-top: 1px solid #e5e5e5;
-      padding: 30px 0 45px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 13px;
-      color: #888;
-    }
-
-
-    /* ---------- MOBILE ---------- */
-
-    @media (max-width: 700px) {
-
-      .nav-inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .nav-links {
-        margin-top: 12px;
-      }
-
-      .nav-links a {
-        margin-left: 0;
-        margin-right: 18px;
-      }
-
-      .page-header {
-        padding-top: 45px;
-      }
-
-      h1 {
-        font-size: 31px;
-      }
-
-    }
-
-  </style>
+  <link rel="stylesheet" href="assets/style.css">
 
 </head>
 
 
-<body>
+<body class="page research-page">
 
 
 <!-- NAVIGATION -->
@@ -230,7 +39,7 @@
         Teaching
       </a>
 
-      <a href="assets/Ira_Abraham_CV.pdf" target="_blank">
+      <a href="assets/CV__Ira_Abraham.pdf" target="_blank">
         CV
       </a>
 
@@ -259,9 +68,6 @@
 
 <section>
 
-  <h2>Job Market Paper</h2>
-
-
   <div class="paper">
 
     <div class="paper-title">
@@ -275,15 +81,23 @@
     <div class="paper-links">
 
       <a
-        href="https://drive.google.com/file/d/1SK9BV0TaADtSHCfUh690MsTTkUqswuIr/view?usp=share_link"
+        href="assets/papers/Reducing_Medicare_Costs_by_Accounting_for_Selection.pdf"
         target="_blank">
         Paper
+      </a>
+
+      <a
+        href="assets/JMP_presentation_IraAbraham.pdf"
+        target="_blank">
+        Slides
       </a>
 
     </div>
 
 
-    <div class="abstract">
+    <details class="abstract">
+
+      <summary>ABSTRACT+</summary>
 
       <p>
         <span class="abstract-label">Abstract.</span>
@@ -309,7 +123,7 @@
         $0.585 billion.
       </p>
 
-    </div>
+    </details>
 
   </div>
 
@@ -343,7 +157,7 @@
     <div class="paper-links">
 
       <a
-        href="https://albertoc94.github.io/albertocappello/publications/VI_healthplans_draft.pdf"
+        href="assets/papers/Hospital_Sponsored_Health_Plans_Readmission_Rates.pdf"
         target="_blank">
         Paper
       </a>
@@ -351,7 +165,9 @@
     </div>
 
 
-    <div class="abstract">
+    <details class="abstract">
+
+      <summary>ABSTRACT+</summary>
 
       <p>
         <span class="abstract-label">Abstract.</span>
@@ -377,7 +193,7 @@
         more concentrated hospital markets.
       </p>
 
-    </div>
+    </details>
 
   </div>
 
@@ -407,7 +223,7 @@
     <div class="paper-links">
 
       <a
-        href="https://drive.google.com/file/d/1vOo7wZHVFwT09UqHGLMiiGMKIwStg-rp/view?usp=sharing"
+        href="assets/papers/Spillover_Effects_between_Medicare_Programs.pdf"
         target="_blank">
         Paper
       </a>
@@ -415,7 +231,9 @@
     </div>
 
 
-    <div class="abstract">
+    <details class="abstract">
+
+      <summary>ABSTRACT+</summary>
 
       <p>
         <span class="abstract-label">Abstract.</span>
@@ -440,7 +258,7 @@
         of offering a zero-premium plan by 0.57 percentage points.
       </p>
 
-    </div>
+    </details>
 
   </div>
 

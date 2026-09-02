@@ -7,208 +7,12 @@
 
   <title>Ira Abraham</title>
 
-  <style>
-
-    /* ---------- GENERAL ---------- */
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: #ffffff;
-      color: #222;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 17px;
-      line-height: 1.7;
-    }
-
-    a {
-      color: #2d5873;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 0 30px;
-    }
-
-
-    /* ---------- NAVIGATION ---------- */
-
-    nav {
-      border-bottom: 1px solid #e5e5e5;
-      padding: 20px 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .nav-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .nav-name {
-      font-size: 19px;
-      font-weight: 600;
-    }
-
-    .nav-name a {
-      color: #222;
-      text-decoration: none;
-    }
-
-    .nav-links a {
-      margin-left: 28px;
-      color: #444;
-      font-size: 15px;
-    }
-
-    .nav-links a:hover {
-      color: #000;
-    }
-
-
-    /* ---------- INTRO ---------- */
-
-    .intro {
-      display: grid;
-      grid-template-columns: 1fr 220px;
-      gap: 60px;
-      align-items: center;
-      padding: 75px 0 55px;
-    }
-
-    h1 {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 42px;
-      margin: 0 0 6px;
-      font-weight: 600;
-      letter-spacing: -1px;
-    }
-
-    .position {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px;
-      color: #555;
-      margin-bottom: 3px;
-    }
-
-    .institution {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 16px;
-      color: #666;
-      margin-bottom: 23px;
-    }
-
-    .fields {
-      font-size: 16px;
-      color: #555;
-      margin-bottom: 20px;
-    }
-
-    .profile-photo {
-      width: 210px;
-      height: 210px;
-      object-fit: cover;
-      border-radius: 4px;
-    }
-
-    .quick-links {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 15px;
-      margin-top: 18px;
-    }
-
-    .quick-links a {
-      margin-right: 18px;
-    }
-
-
-    /* ---------- ABOUT ---------- */
-
-    section {
-      padding: 42px 0;
-      border-top: 1px solid #ececec;
-    }
-
-    h2 {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 25px;
-      font-weight: 500;
-      margin-top: 0;
-      margin-bottom: 25px;
-    }
-
-    p {
-      margin-top: 0;
-      margin-bottom: 18px;
-    }
-
-
-    /* ---------- FOOTER ---------- */
-
-    footer {
-      margin-top: 30px;
-      border-top: 1px solid #e5e5e5;
-      padding: 30px 0 45px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 13px;
-      color: #888;
-    }
-
-
-    /* ---------- MOBILE ---------- */
-
-    @media (max-width: 700px) {
-
-      .intro {
-        grid-template-columns: 1fr;
-        padding-top: 45px;
-        gap: 30px;
-      }
-
-      .profile-photo {
-        width: 180px;
-        height: 180px;
-      }
-
-      .intro-photo {
-        order: -1;
-      }
-
-      h1 {
-        font-size: 34px;
-      }
-
-      .nav-inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .nav-links {
-        margin-top: 12px;
-      }
-
-      .nav-links a {
-        margin-left: 0;
-        margin-right: 18px;
-      }
-
-    }
-
-  </style>
+  <link rel="stylesheet" href="assets/style.css">
 
 </head>
 
 
-<body>
+<body class="home">
 
 
 <!-- NAVIGATION -->
@@ -235,7 +39,7 @@
         Teaching
       </a>
 
-      <a href="assets/Ira_Abraham_CV.pdf" target="_blank">
+      <a href="assets/CV__Ira_Abraham.pdf" target="_blank">
         CV
       </a>
 
@@ -274,20 +78,20 @@
 
     <div class="quick-links">
 
-      <a href="mailto:YOUR_EMAIL_HERE">
+      <a href="mailto:ilabraham@uiowa.edu">
         Email
       </a>
 
-      <a href="assets/Ira_Abraham_CV.pdf" target="_blank">
+      <a href="assets/CV__Ira_Abraham.pdf" target="_blank">
         CV
       </a>
 
-      <a href="YOUR_GOOGLE_SCHOLAR_LINK" target="_blank">
-        Google Scholar
+      <a href="https://www.linkedin.com/in/ira-abraham-8a501817b/" target="_blank">
+        LinkedIn
       </a>
 
-      <a href="YOUR_LINKEDIN_LINK" target="_blank">
-        LinkedIn
+      <a href="https://tippie.uiowa.edu/people/ira-abraham" target="_blank">
+        Tippie Profile
       </a>
 
     </div>
@@ -299,7 +103,7 @@
 
     <img
       class="profile-photo"
-      src="https://github.com/iraabraham.png"
+      src="assets/profile-photo.jpg"
       alt="Ira Abraham">
 
   </div>
@@ -322,9 +126,9 @@
 
   <p>
     My research lies at the intersection of health economics and
-    industrial organization. I study health insurance markets,
-    healthcare providers, and the design of public health insurance
-    programs, with a particular focus on Medicare Advantage.
+    industrial organization. I study the design of public health
+    insurance programs, vertical integration in health care markets,
+    and spillovers across different public programs.
   </p>
 
   <p>
